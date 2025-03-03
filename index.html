@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favour Andrew - Affiliate Marketer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="form-validation.js" defer></script>
+    <style>
+      .sidebar {
+        display: none;
+        /* ...existing styles... */
+      }
+      .sidebar.show {
+        display: block;
+        /* ...additional styles if needed... */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="ri-close-large-line"></i></a>
+            </li>
+            <li>
+              <a href="#home" onclick="hideSidebar()"
+                ><i class="ri-home-4-fill"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" onclick="hideSidebar()"
+                ><i class="ri-map-pin-line"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="#services" onclick="hideSidebar()"
+                ><i class="ri-customer-service-fill"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="hideSidebar()"
+                ><i class="ri-contacts-book-fill"></i> Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="hamburger">
+            <li><a href="#">Classic</a></li>
+            <li class="hideonmobile"><a href="#home">Home</a></li>
+            <li class="hideonmobile"><a href="#about">About</a></li>
+            <li class="hideonmobile"><a href="#services">Services</a></li>
+            <li class="hideonmobile"><a href="#contact">Contact</a></li>
+            <li
+              onclick="showSidebar()"
+              class="hamburger-line"
+              style="position: absolute; right: 20px; top: 20px"
+            >
+              <a href="#" class="menu-button"><i class="ri-menu-line"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <h1>Welcome to Favour Andrew's Affiliate Marketing Page</h1>
+          <p>Your success is our priority. Join us and start earning today!</p>
+          <button>
+            <a href="new-page.html"
+              >Get Started <i class="ri-arrow-right-line"></i
+            ></a>
+          </button>
+        </div>
+        <div class="home-img">
+          <img
+            src="/images/_MG_8601.jpg"
+            alt="Home Image"
+            style="width: 100%; height: auto"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <h2>About Favour Andrew</h2>
+          <p>
+            Favour Andrew is a seasoned affiliate marketer with years of
+            experience in helping businesses grow. Through her expert guidance
+            and carefully curated recommendations, Favour empowers her audience
+            to make informed purchasing decisions and unlock the full potential
+            of online shopping.
+          </p>
+        </div>
+        <div class="about-img">
+          <img
+            src="/images/headway-5QgIuuBxKwM-unsplash.jpg"
+            alt="About Image"
+            style="width: 70%; height: auto"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Affiliate Marketing Training</li>
+          <li>Marketing Strategy Consultation</li>
+          <li>Performance Analytics</li>
+        </ul>
+        <!-- <img
+          src="services.jpg"
+          alt="Services Image"
+          style="width: 100%; height: auto"
+        /> -->
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form method="post" action="https://formspree.io/f/xjkgnjpw">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <img
+        src="contact.jpg"
+        alt="Contact Image"
+        style="width: 100%; height: auto"
+      />
+    </section>
+    <footer>
+      <p>&copy; 2025 Favour Andrew. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://wa.link/5rafmr" target="_blank"
+          ><i class="ri-whatsapp-fill"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/favourandrew854?igsh=MWp3dmFyYWs1N3k4bQ=="
+          target="_blank"
+          ><i class="ri-instagram-fill"></i
+        ></a>
+        <a href="https://tiktok.com/@classic.coach5" target="_blank"
+          ><i class="ri-tiktok-fill"></i
+        ></a>
+      </div>
+    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("show");
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("show");
+      }
+    </script>
+    <script src="script.js"></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  </body>
+</html>
