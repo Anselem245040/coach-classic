@@ -31,6 +31,10 @@ img {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 70px;
   background-color: #007bff;
   color: white;
@@ -312,6 +316,10 @@ footer .social-media a:hover {
     padding: 0.5rem 0;
   }
 
+  .sidebar {
+    width: 100%;
+  }
+
   .home-container {
     flex-direction: column;
     padding: 1rem;
@@ -390,12 +398,6 @@ footer .social-media a:hover {
   .about-img {
     width: 100%;
     padding: 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
   }
 }
 
